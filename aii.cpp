@@ -3,6 +3,11 @@
 #include <locale.h>
 int main(){
 	setlocale(LC_ALL, "Portuguese");
+	printf("Olá, Mundo! \n");
+	printf("Digite um número: ");
+	int num;
+	scanf("%d", &num);
+	printf("O número digitado foi: %d \n", num);
 	char descricao[20];
 	printf("Digite a descrição \n");
 	scanf("%s", &descricao);
