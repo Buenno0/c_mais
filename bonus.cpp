@@ -14,7 +14,7 @@ int main() {
     printf("Digite o salário: ");
     scanf("%f", &salario);
 
-    if (tempo_servico > 5) {
+    if (tempo_servico >= 5) {
         bonus = salario * 0.2f;
         printf("O bônus é de R$ %.2f \n", bonus);
     }else {

@@ -11,8 +11,11 @@ int main() {
     printf("Digite um número: ");
     scanf("%d", &num);
     
-    if (num > 20) 
+    if (num >= 20){
         metade = num / 2.0f; 
         printf("O número é maior que 20. A divisão por 2 é: %.2f \n", metade);
+    } else {
+        printf("O número é menor que 20. \n");
+    }
 }
 
