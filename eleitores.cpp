@@ -3,7 +3,6 @@
 #include <locale.h>
 #include <string>
 #include <iostream>
-using namespace std;
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
@@ -25,13 +24,9 @@ int main(){
     printf("Digite o número de votos do candidato mais votado: ");
     scanf("%d", &candidatoMaisVotado);
 
-    if (quantMoradores > 20000 && candidatoMaisVotado > (eleitores/2)) {
-        printf("nao havera segundo turno.");
-    } else if (quantMoradores <= 20000) {
-        printf("não havera segundo turno.");
+    if ((quantMoradores <= 20000) || (candidatoMaisVotado > (eleitores/2))){
+        printf("nao havera segundo turno");
     } else {
-        printf("havera segundo turno.");
+        printf("havera segundo turno");
     }
-    }
-
-  
+}
