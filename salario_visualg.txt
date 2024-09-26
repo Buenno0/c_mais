@@ -1,0 +1,23 @@
+algoritmo "salario"
+
+var
+    salario: real
+    aumento: real
+    novoSalario: real
+
+inicio
+    escreva("Digite o salário atual: ")
+    leia(salario)
+
+    se (salario < 1500) entao
+        aumento := salario * 0.15
+    senao se (salario >= 1500) e (salario <= 3000) entao
+        aumento := salario * 0.10
+    senao
+        aumento := salario * 0.05
+    fimse
+
+    novoSalario := salario + aumento
+
+    escreva("O novo salário é: R$", novoSalario)
+fimalgoritmo
