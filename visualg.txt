@@ -1,0 +1,26 @@
+algoritmo "eleicoes"
+var
+    cidade : caractere
+    quantMoradores : inteiro
+    eleitores : inteiro
+    candidatoMaisVotado : inteiro
+inicio
+
+    escreva("Digite o nome da cidade: ")
+    leia(cidade)
+
+    escreva("Digite o número de moradores: ")
+    leia(quantMoradores)
+
+    escreva("Digite o número de eleitores aptos: ")
+    leia(eleitores)
+
+    escreva("Digite o número de votos do candidato mais votado: ")
+    leia(candidatoMaisVotado)
+
+    se (quantMoradores <= 20000) ou (candidatoMaisVotado > (eleitores / 2)) então
+        escreva("nao havera segundo turno")
+    senao
+        escreva("havera segundo turno")
+    fimse
+fimalgoritmo
