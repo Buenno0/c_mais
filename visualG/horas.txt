@@ -1,0 +1,24 @@
+Algoritmo "semnome"
+
+Var
+    nome: caractere
+    horasPermitidas, horasAcessadas: inteiro
+
+Inicio
+    escreval("Digite seu nome:")
+    leia(nome)
+
+    escreval("Digite a quantidade de horas permitidas:")
+    leia(horasPermitidas)
+
+    escreval("Digite a quantidade de horas acessadas:")
+    leia(horasAcessadas)
+
+    se (horasAcessadas > horasPermitidas) entao
+        escreval("Ultrapassou o limite.")
+    senao se (horasAcessadas = horasPermitidas) entao
+        escreval("No limite.")
+    senao
+        escreval("Abaixo do limite.")
+    fimse
+fimalgoritmo
