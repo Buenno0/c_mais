@@ -10,14 +10,14 @@ inicio
     leia(salario)
 
     se (salario < 1500) entao
-        aumento := salario * 0.15
+        aumento <- salario * 0.15
     senao se (salario >= 1500) e (salario <= 3000) entao
-        aumento := salario * 0.10
+        aumento <- salario * 0.10
     senao
-        aumento := salario * 0.05
+        aumento <- salario * 0.05
     fimse
 
-    novoSalario := salario + aumento
+    novoSalario <- salario + aumento
 
     escreva("O novo salário é: R$", novoSalario)
 fimalgoritmo
