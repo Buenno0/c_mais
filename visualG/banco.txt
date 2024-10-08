@@ -1,0 +1,23 @@
+Algoritmo "CalculoCredito"
+
+    var
+    saldoMedio, credito: Real
+
+    escreva("Digite o saldo médio: ")
+    leia(saldoMedio)
+
+    se saldoMedio <= 500 Então
+        escreva("Não há crédito disponível")
+    senao se saldoMedio > 500 E saldoMedio <= 1000 Então
+        credito := saldoMedio * 0.3
+        escreva("O crédito é: R$", credito)
+    senao se saldoMedio > 1000 E saldoMedio <= 3000 Então
+        credito := saldoMedio * 0.4
+        escreva("O crédito é: R$", credito)
+    senao
+        credito := saldoMedio * 0.5
+        escreva("O crédito é: R$", credito)
+    fimse
+
+    escreva("Seu saldo médio é: R$", saldoMedio)
+fimalgoritmo
