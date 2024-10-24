@@ -8,9 +8,10 @@ int main() {
     float precoUnitario, valorCompra, desconto;
     char descricao[50];
     i = 1;
-    valorCompra = 0;
+   
     while (i <= 3)
     {
+        valorCompra = 0;
         printf("Digite o código do produto: ");
         scanf("%d", &codProduto);
         printf("Digite a descrição do produto: ");
