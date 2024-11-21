@@ -14,9 +14,9 @@ int main(){
         printf("Informe o número de dias:\n");
         scanf("%d", &numDias);
         
-        if(numDias <10 && numDias > 0){
+        if(numDias <10 && numDias > 0 && codCliente !=0){
             ganhos += 45*numDias;
-        }else if(numDias >=10 && numDias >0){
+        }else if(numDias >=10 && numDias >0 && codCliente !=0){
             ganhos += 38*numDias;
         }
     } while(codCliente != 0);
